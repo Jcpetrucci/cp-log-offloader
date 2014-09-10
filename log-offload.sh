@@ -7,7 +7,7 @@
 # Execute on Check Point SMS/CMA/CLM.  Intended to be run from cron but also works ad-hoc.
 #
 # Begin variables.  Tweak as necessary.
-archive_name="$(\date '+%F-%T' | sed 's/:/-/g').tgz" # Naming convention for the archive of logs.
+archive_name="$(\date -d YESTERDAY '+%F').tgz" # Naming convention for the archive of logs.
 sftp_user="user"
 sftp_host="charliehost.jcp"
 sftp_id="/home/admin/.ssh/id_rsa"
